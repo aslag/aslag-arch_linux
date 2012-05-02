@@ -1,0 +1,10 @@
+The file "patch.bonding" is a patch for the file src/bonding in the AUR package
+netcfg-bonding 1.2-1 (cf. https://aur.archlinux.org/packages.php?ID=25771). 
+
+The patch fixes an error in the bonding_up() function which prevented it from 
+making use of properly-plumbed slave interfaces and resulted in bonded 
+interface configuration failure. It also adds some useful debug and other 
+logging as well as replaces instances of the nonportable "grep -q" with 
+"grep ... > /dev/null".
+
+-aslag, aslag@tehlulz.com
