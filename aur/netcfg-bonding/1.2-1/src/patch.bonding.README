@@ -7,4 +7,9 @@ interface configuration failure. It also adds some useful debug and other
 logging as well as replaces instances of the nonportable "grep -q" with 
 "grep ... > /dev/null".
 
+Apply patch by extracting the netcfg-bonding package, copying patch.bonding
+to src/, and executing "patch <patch.bonding".
+
+netcfg-bonding is GPL and so is patch.bonding; see COPYING for license text.
+
 -aslag, aslag@tehlulz.com
